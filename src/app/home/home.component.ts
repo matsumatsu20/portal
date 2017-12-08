@@ -108,6 +108,14 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     let id = this.session.get('team_id');
 
+    console.log(id);
+    console.log(id);
+    console.log(id);
+    console.log(id);
+    console.log(id);
+    console.log(id);
+
+
     this.model.get(`/api/teams/${id}`)
       .subscribe((teamData: { id: number; name: string; members: string[] }) => {
         let ms = teamData.members.map((member) => {
